@@ -1,3 +1,17 @@
+
+:root {
+    font-size: 62.5%; /* 1rem === 10px */
+
+    /* variables */
+    --font-color: rgb(206, 206, 206);
+    --background-color: rgb(37, 37, 37);
+    --link-color:  rgb(190, 255, 201);
+}
+
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Courier New", Courier, monospace;
     /* -webkit-font-smoothing: antialiased;
@@ -8,19 +22,6 @@ body {
     flex-direction: column;
     background: rgb(66, 88, 160);
     background: linear-gradient(90deg, rgb(41, 104, 80) 0%, rgb(139, 139, 139) 50%, rgb(66, 88, 160) 100%);
-}
-
-html {
-    height: 100%;
-}
-
-:root {
-    font-size: 62.5%; /* 1rem === 10px */
-
-    /* variables */
-    --font-color: rgb(206, 206, 206);
-    --background-color: rgb(37, 37, 37);
-    --link-color:  rgb(190, 255, 201);
 }
 
 header {
@@ -60,7 +61,7 @@ main {
 
 }
 
-main > * {
+main > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +104,7 @@ main > * {
 }
 
 .main__img {
-    width: 240px;
+    width: 24rem;
 }
 
 .main__link-item {
