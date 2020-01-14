@@ -112,6 +112,7 @@ main > div {
 
 .main__img img {
     width: 100%;
+    max-width: 300px;
 }
 
 .main__link-item {
