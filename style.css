@@ -1,13 +1,13 @@
 :root {
   /* font-size: 62.5%; 1rem === 10px */
   /* decided to increase size of everything */
-  font-size: 80%;
+  font-size: 90%;
 
   /* variables */
-  --font-color: rgb(216, 216, 216);
-  --background-color: rgb(22, 22, 22);
-  --link-color: rgb(67, 86, 255);
-  --link-color-hover: rgb(104, 160, 216);
+  --font-color: #F8E9E9;
+  --background-color: #394648;
+  --link-color: #63B0CD;
+  --link-color-hover:#4e8da3;
 }
 
 html,
@@ -20,17 +20,16 @@ body {
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  color: var(--font-color);
+  font-family: 'Afacad', sans-serif;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background: var(--font-color);
-  color: var(--background-color);
+  color: var(--font-color);
+  background: var(--background-color);
 }
 
 header {
-  border-bottom: 0.2rem dashed var(--background-color);
+  border-bottom: 0.1rem dashed var(--font-color);
   display: flex;
   justify-content: flex-start;
   font-size: 3rem;
@@ -68,24 +67,18 @@ h3 {
 main {
   display: flex;
   flex: 1;
+  padding: 2rem 2rem;
 }
 
 main > div {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   flex: 1;
 }
 
 .main {
-  padding: 1rem;
-  margin: 1.5rem;
   font-size: 1.3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border-radius: 1rem;
 }
 
@@ -98,27 +91,11 @@ main > div {
 }
 
 .main__heading {
-  margin-bottom: 1rem;
-  border-bottom: 0.1rem solid var(--background-color);
   padding: 1rem 0;
 }
 
-.main__content {
-  margin: 0.75rem 1.5rem;
-  max-width: 45rem;
-}
-
-.main__img {
-  padding: 0 1.5rem;
-}
-
-.main__img img {
-  width: 100%;
-  max-width: 500px;
-}
-
 .main__link-item {
-  padding: 0.3rem;
+  padding: 0.3rem 0;
 }
 
 @media only screen and (min-width: 800px) {
@@ -126,11 +103,6 @@ main > div {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 0.75rem;
-  }
-
-  .main__img img {
-    max-width: 30rem;
   }
 
   html {
